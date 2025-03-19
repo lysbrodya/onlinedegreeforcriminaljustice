@@ -19,6 +19,7 @@ window.addEventListener(
 
 document.addEventListener("DOMContentLoaded", () => {
   const themeToggleButton = document.getElementById("theme-toggle");
+  const imgEl = document.querySelector(".moon-btn");
   const body = document.body;
 
   const savedTheme = localStorage.getItem("theme");
@@ -28,7 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   themeToggleButton.addEventListener("click", () => {
     body.classList.toggle("dark-theme");
-
+    imgEl.src = body.classList.contains("dark-theme")
+      ? "images/sun.png"
+      : "images/moon.png";
     if (body.classList.contains("dark-theme")) {
       localStorage.setItem("theme", "dark");
     } else {
