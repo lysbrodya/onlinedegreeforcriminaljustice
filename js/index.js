@@ -39,3 +39,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+// const imgMain = document.querySelector(".main-img");
+// const imgMain = document.querySelector(".imgMain");
+
+// window.addEventListener("resize", () => {
+//   if (window.innerWidth < 576) {
+//     imgMain.style.backgroundImage = `url('./images/main.jpg')`;
+//     imgMain.style.backgroundSize = "cover";
+//     imgMain.style.backgroundPosition = "center";
+//     console.log(imgMain);
+
+//     // imgMain.innerHTML("");
+//   }
+//   console.log(`Current window width: ${window.innerWidth}px`);
+// });
